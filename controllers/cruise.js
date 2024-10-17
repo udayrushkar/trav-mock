@@ -1,4 +1,12 @@
-const { REGIONS_LIST, COUNTRY_LIST, PORT_LIST, CRUISELINE_LIST, SHIPS_LIST, SEARCH_RESULT } = require("../models/mockups");
+const {
+  REGIONS_LIST,
+  COUNTRY_LIST,
+  PORT_LIST,
+  CRUISELINE_LIST,
+  SHIPS_LIST,
+  SEARCH_RESULT,
+  CRUISE_DETAILS,
+} = require("../models/mockups");
 
 const getAllDestination = async (req, res) => {
   const lists = REGIONS_LIST;
@@ -20,15 +28,18 @@ const getAllCruiseLine = async (req, res) => {
   res.status(200).json(lists);
 };
 
-
 const getAllCruiseShip = async (req, res) => {
   const lists = SHIPS_LIST;
   res.status(200).json(lists);
 };
 
-
 const getCruiseSearchResults = async (req, res) => {
   const result = SEARCH_RESULT;
+  res.status(200).json(result);
+};
+
+const getCruiseDetails = async (req, res) => {
+  const result = CRUISE_DETAILS;
   res.status(200).json(result);
 };
 
@@ -38,5 +49,6 @@ module.exports = {
   getAllPort,
   getAllCruiseLine,
   getAllCruiseShip,
-  getCruiseSearchResults
+  getCruiseSearchResults,
+  getCruiseDetails,
 };
