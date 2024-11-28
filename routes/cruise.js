@@ -1,13 +1,17 @@
 const express = require("express");
 const router = express.Router();
-const { getAllDestination, getAllCountry, getAllPort, getAllCruiseLine, getAllCruiseShip, getCruiseSearchResults,getCruiseDetails } = require("../controllers/cruise");
+const { getAllDestination, getAllCountry, getAllPort, getAllCruiseLine, getAllCruiseShip, getCruiseSearchResults,getCruiseDetails, getCruiseCabin, getCruiseCabinGrades, cruisecabinbasketadd, cruisecabingradebreakdown } = require("../controllers/cruise");
 
-router.route("/regions").get(getAllDestination);
-router.route("/country").get(getAllCountry);
-router.route("/port").get(getAllPort);
-router.route("/cruiseline").post(getAllCruiseLine);
-router.route("/ships").post(getAllCruiseShip);
-router.route("/search").post(getCruiseSearchResults);
-router.route("/cruisedetails").post(getCruiseDetails);
+router.route("/master/regions").get(getAllDestination);
+router.route("/master/country").get(getAllCountry);
+router.route("/master/port").get(getAllPort);
+router.route("/master/cruiseline").post(getAllCruiseLine);
+router.route("/master/ships").post(getAllCruiseShip);
+router.route("/availability/search").post(getCruiseSearchResults);
+router.route("/availability/cruisedetails").post(getCruiseDetails);
+router.route("/availability/cruisecabingrades").post(getCruiseCabinGrades);
+router.route("/cruisecabin").post(getCruiseCabin);
+router.route("/cruisecabinbasketadd").post(cruisecabinbasketadd);
+router.route("/cruisecabingradebreakdown").post(cruisecabingradebreakdown);
 
 module.exports = router;
