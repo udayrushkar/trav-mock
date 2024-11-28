@@ -6,40 +6,78 @@ const {
   SHIPS_LIST,
   SEARCH_RESULT,
   CRUISE_DETAILS,
+  CRUISE_CABIN,
+  CRUISE_CABIN_GRADES,
+  CRUISE_CABIN_BASKET_ADD,
+  CRUISE_CABIN_GRADE_BREAKDOWN,
 } = require("../models/mockups");
 
+// Helper function to simulate a 2-second delay
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
 const getAllDestination = async (req, res) => {
+  await delay(2000); // 2-second delay
   const lists = REGIONS_LIST;
   res.status(200).json(lists);
 };
 
 const getAllCountry = async (req, res) => {
+  await delay(2000); // 2-second delay
   const lists = COUNTRY_LIST;
   res.status(200).json(lists);
 };
 
 const getAllPort = async (req, res) => {
+  await delay(2000); // 2-second delay
   const lists = PORT_LIST;
   res.status(200).json(lists);
 };
 
 const getAllCruiseLine = async (req, res) => {
+  await delay(2000); // 2-second delay
   const lists = CRUISELINE_LIST;
   res.status(200).json(lists);
 };
 
 const getAllCruiseShip = async (req, res) => {
+  await delay(2000); // 2-second delay
   const lists = SHIPS_LIST;
   res.status(200).json(lists);
 };
 
 const getCruiseSearchResults = async (req, res) => {
+  await delay(2000); // 2-second delay
   const result = SEARCH_RESULT;
   res.status(200).json(result);
 };
 
 const getCruiseDetails = async (req, res) => {
+  await delay(2000); // 2-second delay
   const result = CRUISE_DETAILS;
+  res.status(200).json(result);
+};
+
+const getCruiseCabin = async (req, res) => {
+  await delay(2000); // 2-second delay
+  const result = CRUISE_CABIN;
+  res.status(200).json(result);
+};
+
+const getCruiseCabinGrades = async (req, res) => {
+  await delay(2000); // 2-second delay
+  const result = CRUISE_CABIN_GRADES;
+  res.status(200).json(result);
+};
+
+const cruisecabinbasketadd = async (req, res) => {
+  await delay(2000); // 2-second delay
+  const result = CRUISE_CABIN_BASKET_ADD;
+  res.status(200).json(result);
+};
+
+const cruisecabingradebreakdown = async (req, res) => {
+  await delay(2000); // 2-second delay
+  const result = CRUISE_CABIN_GRADE_BREAKDOWN;
   res.status(200).json(result);
 };
 
@@ -51,4 +89,8 @@ module.exports = {
   getAllCruiseShip,
   getCruiseSearchResults,
   getCruiseDetails,
+  getCruiseCabin,
+  getCruiseCabinGrades,
+  cruisecabinbasketadd,
+  cruisecabingradebreakdown
 };
