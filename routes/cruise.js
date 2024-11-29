@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { getAllDestination, getAllCountry, getAllPort, getAllCruiseLine, getAllCruiseShip, getCruiseSearchResults,getCruiseDetails, getCruiseCabin, getCruiseCabinGrades, cruisecabinbasketadd, cruisecabingradebreakdown } = require("../controllers/cruise");
+const { getAllDestination, getAllCountry, getAllPort, getAllCruiseLine, getAllCruiseShip, getCruiseSearchResults,getCruiseDetails, getCruiseCabin, getCruiseCabinGrades, cruisecabinbasketadd, cruisecabingradebreakdown, cruisecabinbook } = require("../controllers/cruise");
 
 router.route("/master/regions").get(getAllDestination);
 router.route("/master/country").get(getAllCountry);
@@ -13,5 +13,6 @@ router.route("/availability/cruisecabingrades").post(getCruiseCabinGrades);
 router.route("/cruisecabin").post(getCruiseCabin);
 router.route("/cruisecabinbasketadd").post(cruisecabinbasketadd);
 router.route("/cruisecabingradebreakdown").post(cruisecabingradebreakdown);
+router.route("/cruisecabinbook").post(cruisecabinbook);
 
 module.exports = router;
