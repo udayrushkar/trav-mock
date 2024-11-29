@@ -10,6 +10,7 @@ const {
   CRUISE_CABIN_GRADES,
   CRUISE_CABIN_BASKET_ADD,
   CRUISE_CABIN_GRADE_BREAKDOWN,
+  CRUISE_CABIN_BOOK,
 } = require("../models/mockups");
 
 // Helper function to simulate a 2-second delay
@@ -81,6 +82,12 @@ const cruisecabingradebreakdown = async (req, res) => {
   res.status(200).json(result);
 };
 
+const cruisecabinbook = async (req, res) => {
+  await delay(2000); // 2-second delay
+  const result = CRUISE_CABIN_BOOK;
+  res.status(200).json(result);
+};
+
 module.exports = {
   getAllDestination,
   getAllCountry,
@@ -92,5 +99,6 @@ module.exports = {
   getCruiseCabin,
   getCruiseCabinGrades,
   cruisecabinbasketadd,
-  cruisecabingradebreakdown
+  cruisecabingradebreakdown,
+  cruisecabinbook
 };
