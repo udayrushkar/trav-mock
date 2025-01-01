@@ -27024,6 +27024,38 @@ const CRUISE_CABIN_BOOK = {
     }
 }
 
+const GET_POPULAR_PORTS = {
+  "errors": [],
+  "results": [
+      {
+          "portName": "Bandel, Calcutta",
+          "portDescrption": "Soak in the vitamin sea",
+          "portImageURL": "https://travcoding-api-resources.s3.dualstack.us-east-1.amazonaws.com/travcoading-cruise-new/Port/aerial-view-cargo-ship-cargo-container-harbor.jpg"
+      },
+      {
+          "portName": "Bandar Seri Begawan (Muara)",
+          "portDescrption": "Soak in the vitamin sea",
+          "portImageURL": "https://travcoding-api-resources.s3.dualstack.us-east-1.amazonaws.com/travcoading-cruise-new/Port/aerial-view-cargo-ship-cargo-container-harbor.jpg"
+       }
+    ]
+}
+
+const GET_POPULAR_DESTINATION = {
+  "errors": [],
+  "results": [
+      {
+          "regionName": "Bermuda",
+          "regionDescription": "Soak in the vitamin sea",
+          "regionImageURL": "https://travcoding-api-resources.s3.dualstack.us-east-1.amazonaws.com/travcoading-cruise-new/Destination/world-landmark-signpost-bc-indicating-various-distances-different-cities.jpg"
+      },
+      {
+          "regionName": "Black Sea",
+          "regionDescription": "Soak in the vitamin sea",
+          "regionImageURL": "https://travcoding-api-resources.s3.dualstack.us-east-1.amazonaws.com/travcoading-cruise-new/Destination/world-landmark-signpost-bc-indicating-various-distances-different-cities.jpg"
+       }
+    ]
+};
+
 
 module.exports = {
   REGIONS_LIST,
@@ -27038,5 +27070,7 @@ module.exports = {
   CRUISE_CABIN_GRADES,
   CRUISE_CABIN_BASKET_ADD,
   CRUISE_CABIN_GRADE_BREAKDOWN,
-  CRUISE_CABIN_BOOK
+  CRUISE_CABIN_BOOK,
+  GET_POPULAR_PORTS,
+  GET_POPULAR_DESTINATION
 };
