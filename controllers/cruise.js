@@ -11,6 +11,8 @@ const {
   CRUISE_CABIN_BASKET_ADD,
   CRUISE_CABIN_GRADE_BREAKDOWN,
   CRUISE_CABIN_BOOK,
+  GET_POPULAR_PORTS,
+  GET_POPULAR_DESTINATION,
 } = require("../models/mockups");
 
 // Helper function to simulate a 2-second delay
@@ -88,6 +90,18 @@ const cruisecabinbook = async (req, res) => {
   res.status(200).json(result);
 };
 
+const getpopularport = async (req, res) => {
+  await delay(2000); // 2-second delay
+  const result = GET_POPULAR_PORTS;
+  res.status(200).json(result);
+};
+
+const getpopulardestination = async (req, res) => {
+  await delay(2000); // 2-second delay
+  const result = GET_POPULAR_DESTINATION;
+  res.status(200).json(result);
+};
+
 module.exports = {
   getAllDestination,
   getAllCountry,
@@ -100,5 +114,7 @@ module.exports = {
   getCruiseCabinGrades,
   cruisecabinbasketadd,
   cruisecabingradebreakdown,
-  cruisecabinbook
+  cruisecabinbook,
+  getpopularport,
+  getpopulardestination
 };
