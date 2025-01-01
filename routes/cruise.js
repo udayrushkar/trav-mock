@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { getAllDestination, getAllCountry, getAllPort, getAllCruiseLine, getAllCruiseShip, getCruiseSearchResults,getCruiseDetails, getCruiseCabin, getCruiseCabinGrades, cruisecabinbasketadd, cruisecabingradebreakdown, cruisecabinbook } = require("../controllers/cruise");
+const { getAllDestination, getAllCountry, getAllPort, getAllCruiseLine, getAllCruiseShip, getCruiseSearchResults,getCruiseDetails, getCruiseCabin, getCruiseCabinGrades, cruisecabinbasketadd, cruisecabingradebreakdown, cruisecabinbook, getpopulardestination, getpopularport } = require("../controllers/cruise");
 
 router.route("/master/regions").get(getAllDestination);
 router.route("/master/country").get(getAllCountry);
