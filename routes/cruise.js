@@ -14,5 +14,7 @@ router.route("/cruisecabin").post(getCruiseCabin);
 router.route("/cruisecabinbasketadd").post(cruisecabinbasketadd);
 router.route("/cruisecabingradebreakdown").post(cruisecabingradebreakdown);
 router.route("/cruisecabinbook").post(cruisecabinbook);
+router.route("/getpopularport").post(getpopularport);
+router.route("/getpopulardestination").post(getpopulardestination);
 
 module.exports = router;
