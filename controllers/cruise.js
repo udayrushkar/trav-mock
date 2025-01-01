@@ -13,6 +13,7 @@ const {
   CRUISE_CABIN_BOOK,
   GET_POPULAR_PORTS,
   GET_POPULAR_DESTINATION,
+  GET_CRUISE_REVIEW_RATING,
 } = require("../models/mockups");
 
 // Helper function to simulate a 2-second delay
@@ -102,6 +103,12 @@ const getpopulardestination = async (req, res) => {
   res.status(200).json(result);
 };
 
+const getcruisereviewrating = async (req, res) => {
+  await delay(2000); // 2-second delay
+  const result = GET_CRUISE_REVIEW_RATING;
+  res.status(200).json(result);
+};
+
 module.exports = {
   getAllDestination,
   getAllCountry,
@@ -116,5 +123,6 @@ module.exports = {
   cruisecabingradebreakdown,
   cruisecabinbook,
   getpopularport,
-  getpopulardestination
+  getpopulardestination,
+  getcruisereviewrating
 };
