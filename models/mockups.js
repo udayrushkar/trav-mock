@@ -27056,6 +27056,87 @@ const GET_POPULAR_DESTINATION = {
     ]
 };
 
+const GET_CRUISE_REVIEW_RATING = {
+  "errors": [],
+  "results": [
+      {
+          "id": 14,
+          "bookingId": 13651208,
+          "userId": "9f5cde4c-8bbf-42bd-9d1f-8223abc0ba0c",
+          "accountId": "9f5cde4c-8bbf-42bd-9d1f-8223abc0ba0c",
+          "travellerName": "john suiui",
+          "location": "India",
+          "imageURL": "https://travcoding-api-resources.s3.amazonaws.com/travcoading-cruise-new/CruiseReviewRating/ImageURL/0_13651208.jpg",
+          "videoURL": "https://travcoding-api-resources.s3.amazonaws.com/travcoading-cruise-new/CruiseReviewRating/VideoURL/0_13651208.mp4",
+          "description": "Great cruise!",
+          "rating": 3,
+          "startDate": "2024-12-31T17:51:13.3904489+05:30",
+          "endDate": "2024-12-31T17:51:13.3904505+05:30",
+          "isDeleted": false
+      },
+      {
+          "id": 15,
+          "bookingId": 13651210,
+          "userId": "9f5cde4c-8bbf-42bd-9d1f-8223abc0ba0c",
+          "accountId": "9f5cde4c-8bbf-42bd-9d1f-8223abc0ba0c",
+          "travellerName": "john suiui",
+          "location": "China",
+          "imageURL": "https://travcoding-api-resources.s3.amazonaws.com/travcoading-cruise-new/CruiseReviewRating/ImageURL/0_13651210.jpg",
+          "videoURL": "https://travcoding-api-resources.s3.amazonaws.com/travcoading-cruise-new/CruiseReviewRating/VideoURL/0_13651210.mp4",
+          "description": "Great cruise i have even seen!",
+          "rating": 5,
+          "startDate": "2024-12-31T17:51:13.3904507+05:30",
+          "endDate": "2024-12-31T17:51:13.3904508+05:30",
+          "isDeleted": false
+      },
+      {
+          "id": 16,
+          "bookingId": 13651211,
+          "userId": "9f5cde4c-8bbf-42bd-9d1f-8223abc0ba0c",
+          "accountId": "9f5cde4c-8bbf-42bd-9d1f-8223abc0ba0c",
+          "travellerName": "john suiui",
+          "location": "China",
+          "imageURL": "https://travcoding-api-resources.s3.amazonaws.com/travcoading-cruise-new/CruiseReviewRating/ImageURL/john%20suiui_13651211.jpg",
+          "videoURL": "https://travcoding-api-resources.s3.amazonaws.com/travcoading-cruise-new/CruiseReviewRating/VideoURL/0_13651211.mp4",
+          "description": "Great cruise i have even seen!",
+          "rating": 5,
+          "startDate": "2024-12-31T17:51:13.3904509+05:30",
+          "endDate": "2024-12-31T17:51:13.390451+05:30",
+          "isDeleted": false
+      },
+      {
+          "id": 17,
+          "bookingId": 13651215,
+          "userId": "9f5cde4c-8bbf-42bd-9d1f-8223abc0ba0c",
+          "accountId": "9f5cde4c-8bbf-42bd-9d1f-8223abc0ba0c",
+          "travellerName": "Mr. Tenual Aure",
+          "location": "Europe",
+          "imageURL": "https://travcoding-api-resources.s3.us-east-1.amazonaws.com/travcoading-cruise-new/CruiseReviewRating/ImageURL/Mr. Tenual Aure_13651215.jpg",
+          "videoURL": "https://travcoding-api-resources.s3.us-east-1.amazonaws.com/travcoading-cruise-new/CruiseReviewRating/VideoURL/0_13651215.mp4",
+          "description": "Great cruise i have even seen!",
+          "rating": 5,
+          "startDate": "2024-12-31T17:51:13.3904511+05:30",
+          "endDate": "2024-12-31T17:51:13.3904511+05:30",
+          "isDeleted": false
+      },
+      {
+          "id": 13,
+          "bookingId": 13651206,
+          "userId": "9f5cde4c-8bbf-42bd-9d1f-8223abc0ba0c",
+          "accountId": "9f5cde4c-8bbf-42bd-9d1f-8223abc0ba0c",
+          "travellerName": "john suiui",
+          "location": "India",
+          "imageURL": "https://travcoding-api-resources.s3.amazonaws.com/travcoading-cruise-new/CruiseReviewRating/ImageURL/0_13651206.jpg",
+          "videoURL": "https://travcoding-api-resources.s3.amazonaws.com/travcoading-cruise-new/CruiseReviewRating/VideoURL/0_13651206.mp4",
+          "description": "Great cruise!",
+          "rating": 3,
+          "startDate": "2024-12-31T17:51:13.3904514+05:30",
+          "endDate": "2024-12-31T17:51:13.3904514+05:30",
+          "isDeleted": false
+      }
+  ]
+};
+
 
 module.exports = {
   REGIONS_LIST,
@@ -27072,5 +27153,6 @@ module.exports = {
   CRUISE_CABIN_GRADE_BREAKDOWN,
   CRUISE_CABIN_BOOK,
   GET_POPULAR_PORTS,
-  GET_POPULAR_DESTINATION
+  GET_POPULAR_DESTINATION,
+  GET_CRUISE_REVIEW_RATING
 };
