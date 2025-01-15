@@ -29447,6 +29447,60 @@ const GET_NEWEST_BOLDEST_SECTION =
     ]
 };
 
+const CRUISE_PROMOTIONS =  {
+  "errors": [],
+  "results": [
+      {
+          "id": 1,
+          "price": 234,
+          "cruiseLineName": "tets",
+          "cruiseDescription": "wdwqdwqd",
+          "imageURL": "https://travcoding-api-resources.s3.us-east-1.amazonaws.com/travcoading-cruise-new/CruisePromotions/20250103055225157.jpg",
+          "isDeleted": false
+      },
+      {
+          "id": 5,
+          "price": 234,
+          "cruiseLineName": "tets",
+          "cruiseDescription": "wdwqdwqd",
+          "imageURL": "https://travcoding-api-resources.s3.us-east-1.amazonaws.com/travcoading-cruise-new/CruisePromotions/20250106061537182.jpg",
+          "isDeleted": false
+      },
+      {
+          "id": 6,
+          "price": 234,
+          "cruiseLineName": "tets",
+          "cruiseDescription": "wdwqdwqd",
+          "imageURL": "https://travcoding-api-resources.s3.us-east-1.amazonaws.com/travcoading-cruise-new/CruisePromotions/20250106091447954.jpg",
+          "isDeleted": false
+      },
+      {
+          "id": 7,
+          "price": 234,
+          "cruiseLineName": "tets",
+          "cruiseDescription": "wdwqdwqd",
+          "imageURL": "https://travcoding-api-resources.s3.us-east-1.amazonaws.com/travcoading-cruise-new/CruisePromotions/20250106093215219.jpg",
+          "isDeleted": false
+      },
+      {
+          "id": 2,
+          "price": 234,
+          "cruiseLineName": "wdqdwqdq",
+          "cruiseDescription": "wdwqdwqd",
+          "imageURL": "https://travcoding-api-resources.s3.us-east-1.amazonaws.com/travcoading-cruise-new/CruisePromotions/0.png",
+          "isDeleted": false
+      },
+      {
+          "id": 3,
+          "price": 234,
+          "cruiseLineName": "wdqdwqdq",
+          "cruiseDescription": "wdwqdwqd",
+          "imageURL": "https://travcoding-api-resources.s3.us-east-1.amazonaws.com/travcoading-cruise-new/CruisePromotions/20250102070232203.png",
+          "isDeleted": false
+      }
+  ]
+}
+
 
 module.exports = {
   REGIONS_LIST,
@@ -29465,5 +29519,8 @@ module.exports = {
   GET_POPULAR_PORTS,
   GET_POPULAR_DESTINATION,
   GET_CRUISE_REVIEW_RATING,
-  GET_NEWEST_BOLDEST_SECTION
+  GET_NEWEST_BOLDEST_SECTION,
+  CRUISE_PROMOTIONS
 };
+
+

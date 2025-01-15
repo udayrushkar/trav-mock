@@ -15,6 +15,7 @@ const {
   GET_POPULAR_DESTINATION,
   GET_CRUISE_REVIEW_RATING,
   GET_NEWEST_BOLDEST_SECTION,
+  CRUISE_PROMOTIONS,
 } = require("../models/mockups");
 
 // Helper function to simulate a 2-second delay
@@ -115,6 +116,11 @@ const getnewestboldestbestships = async (req, res) => {
   const result = GET_NEWEST_BOLDEST_SECTION;
   res.status(200).json(result);
 };
+const getCruisePromotions = async (req, res) => {
+  await delay(2000); // 2-second delay
+  const result = CRUISE_PROMOTIONS;
+  res.status(200).json(result);
+};
 
 module.exports = {
   getAllDestination,
@@ -132,5 +138,6 @@ module.exports = {
   getpopularport,
   getpopulardestination,
   getcruisereviewrating,
-  getnewestboldestbestships
+  getnewestboldestbestships,
+  getCruisePromotions
 };
