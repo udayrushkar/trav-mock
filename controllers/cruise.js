@@ -16,6 +16,7 @@ const {
   GET_CRUISE_REVIEW_RATING,
   GET_NEWEST_BOLDEST_SECTION,
   CRUISE_PROMOTIONS,
+  CruiseBookingSummaryByID,
 } = require("../models/mockups");
 
 // Helper function to simulate a 2-second delay
@@ -122,6 +123,12 @@ const getCruisePromotions = async (req, res) => {
   res.status(200).json(result);
 };
 
+const getCruiseBookingSummaryByID = async (req, res) => {
+  await delay(2000); // 2-second delay
+  const result = CruiseBookingSummaryByID;
+  res.status(200).json(result);
+};
+
 module.exports = {
   getAllDestination,
   getAllCountry,
@@ -139,5 +146,6 @@ module.exports = {
   getpopulardestination,
   getcruisereviewrating,
   getnewestboldestbestships,
-  getCruisePromotions
+  getCruisePromotions,
+  getCruiseBookingSummaryByID
 };

@@ -29501,7 +29501,70 @@ const CRUISE_PROMOTIONS =  {
   ]
 }
 
-
+const CruiseBookingSummaryByID = [
+  {
+      "errors": [],
+      "results": [
+          {
+              "bookingCruiseId": 3,
+              "startDate": "2024-11-24T00:00:00Z",
+              "endDate": "2024-12-01T00:00:00Z",
+              "userId": "9f5cde4c-8bbf-42bd-9d1f-8223abc0ba0c",
+              "totalPrice": 2283.5,
+              "totalTransactionAmount": 3454.6,
+              "status": "0",
+              "codeToCruiseId": 2008374,
+              "cruiseName": "Great Stirrup Cay & Dominican Republic from Miami",
+              "lineName": "Norwegian Cruise Line",
+              "regionName": "[\"Caribbean\"]",
+              "sailNights": 7,
+              "shipId": 1368,
+              "itemKey": 1206902832,
+              "cabinName": "Sail Away Inside",
+              "country": "UK",
+              "passengerFullName": ""
+          },
+          {
+              "bookingCruiseId": 5,
+              "startDate": "2024-11-24T00:00:00Z",
+              "endDate": "2024-12-01T00:00:00Z",
+              "userId": "9f5cde4c-8bbf-42bd-9d1f-8223abc0ba0c",
+              "totalPrice": 2374,
+              "totalTransactionAmount": 3454.6,
+              "status": "OnRequest",
+              "codeToCruiseId": 2008374,
+              "cruiseName": "Great Stirrup Cay & Dominican Republic from Miami",
+              "lineName": "Norwegian Cruise Line",
+              "regionName": "[\"Caribbean\"]",
+              "sailNights": 7,
+              "shipId": 1368,
+              "itemKey": 1207016058,
+              "cabinName": "Sail Away Inside",
+              "country": "UK",
+              "passengerFullName": ""
+          },
+          {
+              "bookingCruiseId": 6,
+              "startDate": "2025-05-01T00:00:00Z",
+              "endDate": "2025-05-06T00:00:00Z",
+              "userId": "9f5cde4c-8bbf-42bd-9d1f-8223abc0ba0c",
+              "totalPrice": 1619.9,
+              "totalTransactionAmount": 3454.6,
+              "status": "OnRequest",
+              "codeToCruiseId": 2095406,
+              "cruiseName": "Bermuda from New York",
+              "lineName": "Norwegian Cruise Line",
+              "regionName": "[\"Bermuda\"]",
+              "sailNights": 5,
+              "shipId": 2161,
+              "itemKey": 1208263924,
+              "cabinName": "Inside Stateroom",
+              "country": "UK",
+              "passengerFullName": "John Traveltek"
+          }
+      ]
+  }
+]
 module.exports = {
   REGIONS_LIST,
   SHIPS_LIST,
@@ -29520,7 +29583,8 @@ module.exports = {
   GET_POPULAR_DESTINATION,
   GET_CRUISE_REVIEW_RATING,
   GET_NEWEST_BOLDEST_SECTION,
-  CRUISE_PROMOTIONS
+  CRUISE_PROMOTIONS,
+  CruiseBookingSummaryByID
 };
 
 
