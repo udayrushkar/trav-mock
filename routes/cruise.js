@@ -19,6 +19,6 @@ router.route("/getpopulardestination").post(getpopulardestination);
 router.route("/getcruisereviewrating").get(getcruisereviewrating);
 router.route("/getnewestboldestbestships").get(getnewestboldestbestships);
 router.route("/getcruisepromotions").get(getCruisePromotions);
-router.route("/cruisebookingsummarybyuserid").get(getCruiseBookingSummaryByID);
+router.route("/cruisebookingsummarybyuserid").post(getCruiseBookingSummaryByID);
 
 module.exports = router;
